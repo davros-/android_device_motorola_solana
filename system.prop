@@ -281,5 +281,8 @@ persist.sys.usb.config=mass_storage,adb
 ro.ril.disable.power.collaspe=1
 pm.sleep_mode=1
 
+# To enable boot sounds set value to 1 and place /system/media/android_audio.mp3
+# or edit /system/bin/bootsound with the name of your audio
+ro.config.play.bootsound=0
 ro.rommanager.developerid=Hashcode
-ro.modversion=Droid3-ICS-Beta1
+ro.modversion=Droid3-ICS_AOSP-Beta1

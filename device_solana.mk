@@ -119,7 +119,6 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     Usb \
-    FileManager \
     MusicFX \
     DockAudio \
 
@@ -127,6 +126,28 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \
+    FileManager \
+    AndroidTerm \
+    UserDictionaryProvider \
+    LatinIME \
+    Superuser \
+    Superuser.apk \
+    su
+    
+# Optional packages
+PRODUCT_PACKAGES += \
+    VideoEditor \
+    VoiceDialer \
+    Basic \
+    HoloSpiralWallpaper \
+    MagicSmokeWallpapers \
+    NoiseField \
+    Galaxy4 \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    PhaseBeam \
+    MusicFX \
     libjni_pinyinime \
 
 
@@ -139,6 +160,8 @@ PRODUCT_COPY_FILES += \
     device/motorola/solana/prebuilt/app/wifi_tether_v3_1-beta11.apk:system/app/wifi_tether_v3_1-beta11.apk \
     device/motorola/solana/prebuilt/lib/libwtnativetask.so:system/lib/libwtnativetask.so \
 
+    device/motorola/solana/prebuilt/bin/bootsound:system/bin/bootsound \
+#    device/motorola/solana/prebuilt/media/android_audio.mp3:system/media/android_audio.mp3 \
 
 # Rootfs files
 PRODUCT_COPY_FILES += \
@@ -211,11 +234,12 @@ PRODUCT_COPY_FILES += \
     device/motorola/solana/prebuilt/usr/keylayout/mapphone-switch.kl:system/usr/keylayout/mapphone-switch.kl \
     device/motorola/solana/prebuilt/usr/keylayout/omap-keypad.kl:system/usr/keylayout/omap-keypad.kl \
     device/motorola/solana/prebuilt/usr/keylayout/qtouch-touchscreen.kl:system/usr/keylayout/qtouch-touchscreen.kl \
+    device/motorola/solana/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Phone settings
 PRODUCT_COPY_FILES += \
     device/motorola/solana/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml \
+    device/motorola/solana/prebuilt/etc/spn-conf.xml:system/etc/spn-conf.xml \
 
 
 # Graphics
